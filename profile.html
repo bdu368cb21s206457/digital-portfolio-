@@ -1,0 +1,185 @@
+Doctype html
+<html>
+<head>
+    <title>manimozhi-portfolio</title>
+    <style>
+        body{
+            font-family: Arial,Arial, Helvetica, sans-serif;
+            margin : 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header{ 
+            background-color: #333;
+            color:#fff;
+            text-align: center;
+            padding: 0;
+            position:relative;/*Add this*/
+        }
+        .header-content h1{
+            font-size: 2.5rem;
+        }
+
+        /*Add style for the round profile picture*/
+        .profile-picture{
+            width: 100px ; /*Adjust the size as needed*/
+            height : 100px;
+            border-radius:75% /* create a circlar shape*/   
+            object-fit: cover;/* to ensure the image fills the circular area*/  
+            position:absolute;/*add this*/  
+            top:75px;/* adjust top position as needed*/   
+            left:75px;/* adjust left position as needed*/   
+        }
+        nav{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav u1{
+            list-style-type: none;
+            padding: 0;
+        }
+        nav u1 li a{
+            text-decoration: none;
+            color:#fff;
+        }
+        .sectionb- content{
+            background-color:#fff;
+            padding: 2rem;
+            margin: 0;
+            border-radius: 20px;
+            box-shadow: 0  0  10px rgba(0 ,0 ,0.1);
+            text-align: justify;
+         }
+
+         .downloaded-button{
+            background-color: #333;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 30px;
+            display: inline-block;
+            margin-top: 30px;
+            align-self: center;
+         }
+
+         .downloaded-button{
+            background-color: blueviolet;
+         }
+
+
+         footer{
+            text-align: center;
+            padding: 1rem;
+            background-color: #333;
+            color: #fff;
+         }
+
+         
+         u1{
+            list-style-type: disc;
+            padding-left: 20px;
+         }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="header content"
+        </i-- Add your profile picture here-->
+        <img src="my pic 1.jpg.jpg"alt=" your profile picture"class="profile-picture">
+        <h1>manimozhi</h1>
+        <p>student</p>
+    <div>  
+</header>  
+
+
+<nav> 
+    <u1>
+        <li><a href="#about">About</a> </li>
+        <li><a href="#education">Education</a>/li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="resume">Resume</a></li>
+    </u1>
+<nav>
+
+
+
+
+    <setion id="about">
+        <div class="section-content">
+         <h2>About me</h2> 
+         <p> hello everyone! this is manimozhi. Iam stying computer  science in government arts and  science college
+         </p>
+
+
+      </div>
+    <section>
+    <section id="education">
+        <div class="section-content">
+        <h2>Education</h2>
+        <p>Bharathidhasan university-BSC.computer science</p>
+     </div>
+     </section>
+
+
+
+     <section id="skills">
+        <div class="section-content">
+            <h2>Skills</h2>
+            <u1>
+                <li>web development</li>
+                <li>javascript</li>
+                <li>css</li>
+                <li>html</li>
+            </u1>
+        </div>
+     </section>
+
+    <section id="Projects">
+        <div class="section-content">
+            <h2>Projects</h2>
+            <u1>
+                <li><a href="a"></a>Foundation of cloud computing</a></li>
+                <li><a href="a"><a>IBM skill based</a></li>
+                <i--Add more project links here--->
+            </u1>
+        </div>
+    </section>
+    
+
+    <section id="resume">
+        <div class="section content">
+            <center>
+                <h2>Resume</h2>
+                <a href="resume 1.jpg.jpg"class="downloaded-button">Download CV </a><br><br><br><br>
+            </center>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>&copy;2023 manimozhi</p>
+    </footer>
+ <script>
+    //smooth scrolling to section when clicking on navigation links
+    document.querySelectorAll('a[href^="#"]').ForEach(anchor=>{
+        anchor.addEventListener('click',function(e){
+            e.preventfault();
+
+            const targetId=this.getAttribute('href').substring(1);
+            const targetElement=documents.getElementById(targetId);
+
+            if (targetElement){
+                Window.scrollTo({
+                    top:targetElement.offsetTop,
+                    behaviour:'smooth'
+                 } );
+            }
+         });
+     });
+    </script>
+</body>
+</html>
